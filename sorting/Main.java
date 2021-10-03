@@ -22,11 +22,11 @@ public class Main {
 
          long end = System.currentTimeMillis(); // calculating the ending time
         
-         double total = (end - start); //Difference to get the total time of each number
+         double total = (end - start); //Difference to get the total time of the sort
          
          double seconds= total/1000;//converting to seconds from milliseconds
          
-         System.out.println("The bubble sort takes "+ seconds+ " seconds"); //displaying the number , sum and seconds
+         System.out.println("The bubble sort takes "+ seconds+ " seconds"); //displaying the  seconds taken
  
      
         //using merge sort
@@ -37,11 +37,11 @@ public class Main {
 
         long end1 = System.currentTimeMillis(); // calculating the ending time
         
-         double total1 = (end1 - start); //Difference to get the total time of each number
+         double total1 = (end1 - start); //Difference to get the total time of the sort
          
          double seconds1= total1/1000;//converting to seconds from milliseconds
          
-         System.out.println("The Merge sort takes "+ seconds1+ " seconds"); //displaying the number , sum and seconds
+         System.out.println("The Merge sort takes "+ seconds1+ " seconds"); //displaying the seconds
  
 
     }
