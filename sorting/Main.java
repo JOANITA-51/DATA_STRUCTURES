@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Main {
     
     public static void main(String[] args) {
-        long start = System.currentTimeMillis();// calculating the starting time
+        
         // Load the song plays csv file into an array of songs
         Song[] songsArray = getAllSongs("C:/Users/Joanita/Desktop/Assignment/songs.csv");
         //ensure the song_plays.csv is in the same folder as this java file
@@ -17,6 +17,7 @@ public class Main {
 
 
         //using bubble sort
+        long start = System.currentTimeMillis();// calculating the starting time
          var bubbleSort = new BubbleSort();
          bubbleSort.Sort(songsArray);
          System.out.println(Arrays.toString(songsArray));
@@ -31,14 +32,15 @@ public class Main {
  
      
         //using merge sort
-        
+
+        long start1 = System.currentTimeMillis();// calculating the starting time
         var mergeSort = new MergeSort();
         mergeSort.sort(songsArray);
         System.out.println(Arrays.toString(songsArray));
 
         long end1 = System.currentTimeMillis(); // calculating the ending time
         
-         double total1 = (end1 - start); //Difference to get the total time of the sort
+         double total1 = (end1 - start1); //Difference to get the total time of the sort
          
          double seconds1= total1/1000;//converting to seconds from milliseconds
          
