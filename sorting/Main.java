@@ -19,6 +19,7 @@ public class Main {
         //using bubble sort
          var bubbleSort = new BubbleSort();
          bubbleSort.Sort(songsArray);
+         System.out.println(Arrays.toString(songsArray));
 
          long end = System.currentTimeMillis(); // calculating the ending time
         
@@ -33,7 +34,7 @@ public class Main {
         
         var mergeSort = new MergeSort();
         mergeSort.sort(songsArray);
-        System.out.println(songsArray);
+        System.out.println(Arrays.toString(songsArray));
 
         long end1 = System.currentTimeMillis(); // calculating the ending time
         
